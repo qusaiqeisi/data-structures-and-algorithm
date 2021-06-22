@@ -55,6 +55,12 @@ For example, twoToThe([1,2,3]) returns [2,4,8] because 2 ^ 1 = 2, 2 ^ 2 = 4, and
 
 const forLoopTwoToThe = (arr) => {
   // Solution code here...
+  let newArr1=[]
+  for (let i = 0; i < arr.length; i++) {
+  
+    newArr1.push(Math.pow(2, arr[i])) 
+  }
+  return newArr1;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -65,6 +71,12 @@ Write a function named forEachTwoToThe that produces the same output as your for
 
 const forEachTwoToThe = (arr) => {
   // Solution code here...
+  let newArr2=[]
+  for (let i = 0; i < arr.length; i++) {
+  
+    newArr2.push(Math.pow(2, arr[i])) 
+  }
+  return newArr2;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -75,6 +87,11 @@ Write a function named mapTwoToThe that produces the same output as your forLoop
 
 const mapTwoToThe = (arr) => {
   // Solution code here...
+  // let newArr2=[]
+  let newArr3=arr.map(value=>{
+    return Math.pow(2, value)
+  })
+  return newArr3;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -89,6 +106,10 @@ For example: charCode(['h','i']) returns [104, 105].
 
 const charCode = (arr) => {
   // Solution code here...
+  let newArr4=arr.map(value=>{
+    return value.charCodeAt()
+  })
+  return newArr4;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -103,6 +124,16 @@ For example: evenOdd([1,2,3]) returns ['odd','even','odd'].
 
 const evenOdd = (arr) => {
   // Solution code here...
+  let newArr8=arr.map(value=>{
+    if (value % 2 == 0){
+      return value='even'
+    }else if (value % 2 == 1){
+      return value='odd'
+    }else{
+      return value="N/A"
+    }
+  })
+  return newArr8;
 };
 
 /* ------------------------------------------------------------------------------------------------
