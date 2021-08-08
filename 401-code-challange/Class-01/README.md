@@ -1,8 +1,9 @@
 # Reverse an Array
+
 **its make the array revers so its make it start from back to front**
 
 ## Whiteboard Process
-![](img/array.png)
+![](img/array-reverse.png)
 
 ## Approach & Efficiency
 1. start to make the domin that i need and why revers .
