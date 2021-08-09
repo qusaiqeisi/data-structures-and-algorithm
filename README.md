@@ -15,7 +15,7 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 - Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
 
 ## Code Challenges 1:
-[readme]()
+[readme](https://github.com/qusaiqeisi/data-structures-and-algorithm/blob/main/401-code-challange/Class-01/README.md)
 
 
 ## Code Challenges 2:
