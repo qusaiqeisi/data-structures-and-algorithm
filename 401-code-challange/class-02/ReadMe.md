@@ -1,7 +1,7 @@
 # array-insert-shift
 
 # Insert to Middle of an Array
-**it can add value to the moddel of array . by make the kength of arr/2 and add the 
+**it can add value to the middel of array . by make the kength of arr/2 and add the 
 valur in proper plase** 
 
 ## Whiteboard Process
