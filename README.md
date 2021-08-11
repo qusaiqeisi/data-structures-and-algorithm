@@ -20,3 +20,7 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 
 ## Code Challenges 2:
 [readme](https://github.com/qusaiqeisi/data-structures-and-algorithm/blob/main/401-code-challange/class-02/ReadMe.md)
+
+
+## Code Challenges 3:
+[readme](https://github.com/qusaiqeisi/data-structures-and-algorithm/blob/main/401-code-challange/class-02/ReadMe.md)
