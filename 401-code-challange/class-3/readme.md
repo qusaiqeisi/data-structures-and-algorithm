@@ -4,6 +4,7 @@ its by doing search to the nuber that we need and when we find it we give it as 
 
 ## Whiteboard Process
 ![](img/binarySearch.png)
+[PR](https://github.com/qusaiqeisi/data-structures-and-algorithm/pull/19)
 
 ## Approach & Efficiency
 >1. start to make the domin that i need and why revers .
