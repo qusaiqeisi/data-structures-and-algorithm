@@ -38,3 +38,6 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 ## Code Challenges  7:
 [readme](https://github.com/qusaiqeisi/data-structures-and-algorithm/blob/main/401-code-challange/class-07/redme.md)
 
+
+## Code Challenges  8:
+[readme](https://github.com/qusaiqeisi/data-structures-and-algorithm/tree/main/401-code-challange/class-08)
