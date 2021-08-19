@@ -1,0 +1,16 @@
+{
+  "name": "class-10",
+  "version": "1.0.0",
+  "description": "code challange 10",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose --coverage",
+    "watch": "jest --verbose --coverage --watchAll"
+  },
+  "author": "qusai alqaisi",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^27.0.6",
+    "supertest": "^6.1.6"
+  }
+}
