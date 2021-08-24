@@ -45,3 +45,12 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 
 ## Code Challenges  10:
 [readme](https://github.com/qusaiqeisi/data-structures-and-algorithm/tree/main/401-code-challange/class-10)
+
+## Code Challenges  11:
+[readme](https://github.com/qusaiqeisi/data-structures-and-algorithm/tree/main/401-code-challange/class-10)
+
+## Code Challenges  12:
+[readme](https://github.com/qusaiqeisi/data-structures-and-algorithm/tree/main/401-code-challange/class-10)
+
+## Code Challenges  13:
+[readme](https://github.com/qusaiqeisi/data-structures-and-algorithm/blob/main/401-code-challange/class-13/README.md)
