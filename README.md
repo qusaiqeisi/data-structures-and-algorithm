@@ -54,3 +54,22 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 
 ## Code Challenges  13:
 [readme](https://github.com/qusaiqeisi/data-structures-and-algorithm/blob/main/401-code-challange/class-13/README.md)
+
+
+## Code Challenges  14:
+[readme](https://github.com/qusaiqeisi/data-structures-and-algorithm/blob/main/401-code-challange/class-13/README.md)
+
+
+
+## Code Challenges  15:
+[readme](https://github.com/qusaiqeisi/data-structures-and-algorithm/blob/main/401-code-challange/class-13/README.md)
+
+
+
+## Code Challenges  16:
+[readme](https://github.com/qusaiqeisi/data-structures-and-algorithm/blob/main/401-code-challange/class-16/README.md)
+
+
+
+## Code Challenges  17:
+[readme](https://github.com/qusaiqeisi/data-structures-and-algorithm/blob/main/401-code-challange/class-13/README.md)
