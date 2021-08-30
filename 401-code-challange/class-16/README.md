@@ -36,3 +36,4 @@ Returns: boolean indicating whether or not the value is in the tree at least onc
 
 
 ![](img/uml.png)
+![](img/max5.PNG)
