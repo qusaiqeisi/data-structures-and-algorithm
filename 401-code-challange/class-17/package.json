@@ -1,0 +1,16 @@
+{
+  "name": "class-17",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Breadthtree.js",
+  "scripts": {
+    "test": "jest --verbose --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^27.1.0",
+    "supertest": "^6.1.6"
+  }
+}
