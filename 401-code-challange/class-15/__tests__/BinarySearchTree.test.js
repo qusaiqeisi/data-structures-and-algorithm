@@ -1,69 +1,76 @@
 "use strict";
+
 const BinarySearchTree = require("../BinarySearchTree");
-describe("Binary Search Tree Tests ", () => {
-  it("1.Can successfully instantiate an empty tree", () => {
-    let binarySearchTree = new BinarySearchTree();
-    expect(binarySearchTree.root).toBe(null);
+
+describe("Binary Search & Binary Search Tree", () => {
+  it("Can successfully instantiate an empty tree", () => {
+    let tree = new BinarySearchTree();
+    expect(tree.root).toEqual(null);
   });
 
-  it("2.Can successfully using add method to add one root value", () => {
-    let binarySearchTree = new BinarySearchTree();
-    binarySearchTree.add("50");
-    expect(binarySearchTree.root.value).toBe("50");
-    expect(binarySearchTree.root.left).toBe(null);
-    expect(binarySearchTree.root.right).toBe(null);
-  });
+  it("Can successfully instantiate a tree with a single root node",()=>{
+    let tree = new BinarySearchTree();
+    tree.add(1);
+    expect(tree.root.value).toEqual(1);
+    expect(tree.contains(1)).toEqual(true);
+  })
 
-  it("3.Can successfully add multiple nodes using add method", () => {
-    let binarySearchTree = new BinarySearchTree();
-    binarySearchTree.add("50");
-    binarySearchTree.add("35");
-    binarySearchTree.add("65");
+  it("Can successfully add a left child and right child to a single root node",()=>{
+    let tree = new BinarySearchTree();
+    tree.add(2);
+    tree.add(1);
+    tree.add(9);
+    expect(tree.root.value).toEqual(2);
+    expect(tree.root.left.value).toEqual(1);
+    expect(tree.root.right.value).toEqual(9);
+  })
+  it("Can successfully return a collection from a preorder traversal",()=>{
+    let expextedValue=[ 20,11,3,9,14,31,62,57,72,90]
+    let tree=new BinarySearchTree();
+    tree.add(20)
+    tree.add(31)
+    tree.add(11)
+    tree.add(3)
+    tree.add(9)
+    tree.add(62)
+    tree.add(57)
+    tree.add(72)
+    tree.add(14)
+    tree.add(90)
+    console.log('=======>>>>',tree.preOrder());
+    expect(tree.preOrder()).toEqual(expextedValue);
+  })
+  it("Can successfully return a collection from an inorder traversal",()=>{
+    let expextedValue=[ 3,9,11,14,20,31,57,62,72,90]
+    let tree=new BinarySearchTree();
+    tree.add(20)
+    tree.add(31)
+    tree.add(11)
+    tree.add(3)
+    tree.add(9)
+    tree.add(62)
+    tree.add(57)
+    tree.add(72)
+    tree.add(14)
+    tree.add(90)
+    console.log('=======>>>>',tree.inOrder());
+    expect(tree.inOrder()).toEqual(expextedValue);
+  })
+  it("Can successfully return a collection from a postorder traversal",()=>{
+    let expextedValue=[ 9,3,14,11,57,90,72,62,31,20]
+    let tree=new BinarySearchTree();
+    tree.add(20)
+    tree.add(31)
+    tree.add(11)
+    tree.add(3)
+    tree.add(9)
+    tree.add(62)
+    tree.add(57)
+    tree.add(72)
+    tree.add(14)
+    tree.add(90)
+    console.log('=======>>>>',tree.postOrder());
+    expect(tree.postOrder()).toEqual(expextedValue);
+  })
 
-    expect(binarySearchTree.root.value).toBe("50");
-    expect(binarySearchTree.root.left.value).toBe("35");
-    expect(binarySearchTree.root.right.value).toBe("65");
-    expect(binarySearchTree.root.left.left).toBe(null);
-    expect(binarySearchTree.root.left.right).toBe(null);
-    expect(binarySearchTree.root.right.left).toBe(null);
-    expect(binarySearchTree.root.right.right).toBe(null);
-  });
-});
-
-describe("add & contain methods tests", () => {
-  let binarySearchTree;
-  beforeAll(() => {
-    binarySearchTree = new BinarySearchTree();
-    binarySearchTree.add(50);
-    binarySearchTree.add(35);
-    binarySearchTree.add(65);
-    binarySearchTree.add(42);
-    binarySearchTree.add(29);
-    binarySearchTree.add(10);
-    binarySearchTree.add(31);
-    binarySearchTree.add(33);
-    binarySearchTree.add(58);
-    binarySearchTree.add(100);
-    binarySearchTree.add(55);
-    binarySearchTree.add(60);
-    binarySearchTree.add(52);
-  });
-  it("4.Can successfully create the whole tree using add method", () => {
-    let expectedResults =
-      "50 > 35 > 29 > 10 > 31 > 33 > 42 > 65 > 58 > 55 > 52 > 60 > 100 > ";
-    //   "A > B > D > F > G > H > E > C > I > K > M > L > J > ";
-    expect(binarySearchTree.root.value).toBe(50);
-    expect(binarySearchTree.root.left.value).toBe(35);
-    expect(binarySearchTree.root.right.value).toBe(65);
-    expect(binarySearchTree.root.left.right.value).toBe(42);
-    expect(binarySearchTree.preOrder()).toBe(expectedResults);
-  });
-
-  it("5.Can successfully search for an element if it exists or not, contain method", () => {
-    expect(binarySearchTree.contain(42)).toBe(true);
-    expect(binarySearchTree.contain(70)).toBe(false);
-    expect(binarySearchTree.contain(1)).toBe(false);
-    expect(binarySearchTree.contain(58)).toBe(true);
-    expect(binarySearchTree.contain(-10)).toBe(false);
-  });
 });
